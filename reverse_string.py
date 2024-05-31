@@ -1,23 +1,10 @@
-# Clean code
-def reverse_string(s):
-    return s[::-1]
+class Solution:
+    def __init__(self, string):
+        self.string = string
 
-example = "Anzor"
+    def reverse_string(self):
+        return self.string[::-1]
 
-print(reverse_string(example))
-
-
-#Detailed code
-def reverse_string(any_word):
-    create_list = list(any_word)
-    reversed_list = create_list[::-1]
-    reversed_string = "".join(reversed_list)
-
-    return reversed_string
-
-
-example = "Anzor"
-
-reverse_string = reverse_string(example)
-
-print(reverse_string)
+if __name__ == "__main__":
+    string = "Anzor solved it?!"
+    print(Solution(string).reverse_string())
