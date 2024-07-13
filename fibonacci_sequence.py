@@ -14,7 +14,9 @@ def is_fibonacci(n):
 
 # MEDIUM
 # Efficient way
-def is_fibonacci(n, memo={}):
+def is_fibonacci(n, memo=None):
+    if memo is None:
+        memo = {}
     if n in memo:
         return memo[n]
     if n <= 0:
@@ -25,4 +27,4 @@ def is_fibonacci(n, memo={}):
         memo[n] = is_fibonacci(n-1, memo) + is_fibonacci(n-2, memo)
         return memo[n]
 
-print(is_fibonacci(40))  # This will run much faster
+print(is_fibonacci(40)) # This will run much faster
