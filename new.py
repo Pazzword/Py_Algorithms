@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # URL of the website to scrape
-url = 'https://dashb.pythonanywhere.com/dashboard/'
+url = 'https://www.theguardian.com/uk/commentisfree'
 
 # Send a GET request to the website
 response = requests.get(url)
