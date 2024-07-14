@@ -13,6 +13,7 @@ class Solution:
                 right = mid - 1
         return - 1
 
+solution = Solution()
 example_arr = [1,23,13,42,51,26,7,8,19,10,11]
 
 example_target = 42
@@ -20,4 +21,4 @@ example_target = 42
 sorted_arr = sorted(example_arr)
 
 print(sorted_arr)
-print(Solution().binary_search(sorted_arr, example_target))
+print(solution.binary_search(sorted_arr, example_target))
