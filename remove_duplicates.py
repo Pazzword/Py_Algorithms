@@ -8,6 +8,8 @@ example = ["sprinkle", "anzor", "nina", "nina", "anzor"]
 
 print(remove_duplicates(example))
 
+
+
 # MEDIUM EASY
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
