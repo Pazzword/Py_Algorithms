@@ -1,1 +1,0 @@
-Certainly! Here's a version of the script that doesn't use the Counter class, implementing the word counting logic manually: logic logic
