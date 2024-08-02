@@ -1,10 +1,9 @@
 import requests
 import threading
 
-# URL to which the requests will be sent
-url = 'https://pashaev.pythonanywhere.com/'  # Replace with your actual URL
 
-# Number of requests to send
+url = 'enter web link here'  
+
 num_requests = 10
 
 def send_request(i):
@@ -16,12 +15,10 @@ def send_request(i):
 
 threads = []
 
-# Creating and starting threads
 for i in range(num_requests):
     thread = threading.Thread(target=send_request, args=(i,))
     thread.start()
     threads.append(thread)
 
-# Waiting for all threads to complete
 for thread in threads:
     thread.join()
